@@ -1,0 +1,1 @@
+# immich-authentik-sample
