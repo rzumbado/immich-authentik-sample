@@ -19,7 +19,7 @@ services:
         volumes:
             - database:/var/lib/postgresql/data
         environment:
-            AUTHENTIK_POSTGRESQL__PASSWORD: $AUTHENTIK_DB_PASSWORD
+            POSTGRES_PASSWORD: $AUTHENTIK_POSTGRESQL__PASSWORD
             POSTGRES_USER: $AUTHENTIK_POSTGRESQL__USER
             POSTGRES_DB: $AUTHENTIK_POSTGRESQL__NAME
         networks:
