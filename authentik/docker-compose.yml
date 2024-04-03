@@ -48,6 +48,8 @@ services:
         hostname: authentik-server
         restart: unless-stopped
         command: server
+        env_file:
+            - .env.authentik
         volumes:
             - media:/media
             - custom-templates:/templates
@@ -63,6 +65,8 @@ services:
         hostname: authentik-worker
         restart: unless-stopped
         command: worker
+        env_file:
+            - .env.authentik
         volumes:
             - media:/media
             - certs:/certs
