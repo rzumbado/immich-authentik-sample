@@ -11,7 +11,7 @@ services:
         hostname: authentik-db
         restart: unless-stopped
         healthcheck:
-            test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+            test: ["CMD-SHELL", "pg_isready -d $${AUTHENTIK_POSTGRESQL__NAME} -U $${AUTHENTIK_POSTGRESQL__USER}"]
             start_period: 20s
             interval: 30s
             retries: 5
