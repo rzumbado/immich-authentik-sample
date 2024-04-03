@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "settings": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "[javascript]": {
+          "editor.tabSize": 4
+        },
+        "[json]": {
+          "editor.tabSize": 4
+        },
+        "[yaml]": {
+            "editor.insertSpaces": true,
+            "editor.tabSize": 4,
+            "editor.autoIndent": "advanced"
+        },
+        "[dockercompose]": {
+            "editor.insertSpaces": true,
+            "editor.tabSize": 4,
+            "editor.autoIndent": "advanced",
+            "editor.quickSuggestions": {
+                "other": true,
+                "comments": false,
+                "strings": true
+            }
+        },
+        "editor.insertSpaces": true
+    }
+}
